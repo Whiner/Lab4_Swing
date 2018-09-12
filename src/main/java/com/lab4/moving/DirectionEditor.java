@@ -1,4 +1,10 @@
-package com.lab4;
+package com.lab4.moving;
+
+import com.lab4.DrawingPanel;
+import com.lab4.figures.Circle;
+import com.lab4.figures.Figure;
+
+import java.awt.*;
 
 public class DirectionEditor {
     private int step;
@@ -11,8 +17,10 @@ public class DirectionEditor {
         this.figure = figure;
     }
 
-    public void change() {
-
+    public void changeColor() {
+        if (figure instanceof Circle) {
+            figure.setColor(new Color((int) (Math.random() * 0x1000000)));
+        }
     }
 
     public void addStep() {
@@ -51,6 +59,7 @@ public class DirectionEditor {
         }
         figure.setX(x);
         figure.setY(y);
+        changeColor();
     }
 
     public void step() {

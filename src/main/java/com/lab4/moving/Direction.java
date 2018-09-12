@@ -1,6 +1,9 @@
-package com.lab4;
+package com.lab4.moving;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Random;
 
 public enum Direction {
     UP, UP_RIGHT, RIGHT, RIGHT_DOWN, DOWN, LEFT_DOWN, LEFT, UP_LEFT;

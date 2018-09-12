@@ -1,5 +1,8 @@
 package com.lab4;
 
+import com.lab4.figures.Figure;
+import com.lab4.moving.Mover;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;

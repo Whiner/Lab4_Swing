@@ -1,4 +1,4 @@
-package com.lab4;
+package com.lab4.figures;
 
 import java.awt.*;
 

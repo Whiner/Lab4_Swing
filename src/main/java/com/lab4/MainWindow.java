@@ -2,7 +2,6 @@ package com.lab4;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
 
 public class MainWindow extends JFrame {
 
@@ -16,6 +15,7 @@ public class MainWindow extends JFrame {
    // }
     public MainWindow(JPanel panel) {
         this.panel = panel;
+        this.setBackground(Color.gray);
         this.initComponents();
     }
 

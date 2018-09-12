@@ -1,4 +1,4 @@
-package com.lab4;
+package com.lab4.figures;
 
 import java.awt.*;
 
@@ -8,6 +8,7 @@ public abstract class Figure {
     private int height;
     private int width;
     private Color color = Color.WHITE;
+    private boolean active = false;
     public abstract void paint(Graphics2D graphics);
 
     public Figure() {
@@ -25,6 +26,14 @@ public abstract class Figure {
 
         this.x = x;
         this.y = y;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     public int getWidth() {
